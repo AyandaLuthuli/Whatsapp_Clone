@@ -34,6 +34,13 @@ body {
   border-radius: 50%;
 }
 
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 .sidebar-icons .icon {
   width: 24px;
   height: 24px;
@@ -89,10 +96,17 @@ body {
 .chat-avatar {
   width: 48px;
   height: 48px;
-  background: #bbb;
+  /* background: #bbb; */
   border-radius: 50%;
   margin-right: 16px;
   flex-shrink: 0;
+}
+
+.chat-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .chat-details {
@@ -169,6 +183,13 @@ body {
   background: #bbb;
   border-radius: 50%;
   margin-right: 16px;
+}
+
+.chat-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .chat-info {
@@ -282,7 +303,8 @@ body {
   width: 40px;
   height: 40px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 12px;
+  margin-left: 10px;
 }
 
 .modal {
