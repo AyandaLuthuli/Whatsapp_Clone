@@ -83,14 +83,18 @@ body {
   transition: background 0.2s;
   border-bottom: 1px solid #f0f0f0;
   background: #fff;
+  text-decoration: none; /* Remove underline for links */
+  color: inherit; /* Inherit text color */
 }
 
 .chat-item:hover {
   background: #f5f5f5;
+  text-decoration: none; /* Ensure no underline on hover */
 }
 
 .chat-item.active {
   background: #e6e6e6;
+  text-decoration: none; /* Ensure no underline for active */
 }
 
 .chat-avatar {
