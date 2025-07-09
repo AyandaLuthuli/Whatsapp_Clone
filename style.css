@@ -46,8 +46,12 @@ body {
   height: 24px;
   margin-left: 16px;
   display: inline-block;
-  background: #bbb;
+  /* background: #bbb; */
   border-radius: 50%;
+}
+.sidebar-icons img:hover {
+  cursor: pointer;
+  scale: 1.5;
 }
 
 .search-bar {
