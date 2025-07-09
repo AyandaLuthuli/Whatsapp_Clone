@@ -425,3 +425,25 @@ chatItems.forEach((item) => {
     `;
   });
 });
+
+// Dark/Light mode toggle logic
+const themeToggle = document.getElementById("themeToggle");
+const toggleCheckbox = document.getElementById("toggleCheckbox");
+
+// Load theme from localStorage
+if (localStorage.getItem("theme") === "dark") {
+  document.body.classList.add("dark-mode");
+  if (toggleCheckbox) toggleCheckbox.checked = true;
+}
+
+if (themeToggle && toggleCheckbox) {
+  toggleCheckbox.addEventListener("change", function () {
+    if (this.checked) {
+      document.body.classList.add("dark-mode");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.body.classList.remove("dark-mode");
+      localStorage.setItem("theme", "light");
+    }
+  });
+}

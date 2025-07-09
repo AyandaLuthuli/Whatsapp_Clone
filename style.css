@@ -336,3 +336,128 @@ body {
   padding: 20px;
   border-radius: 5px;
 }
+
+/* Dark/Light mode toggle styles */
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.toggle-switch input[type="checkbox"] {
+  display: none;
+}
+.toggle-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  width: 50px;
+  height: 24px;
+  background: #ccc;
+  border-radius: 24px;
+  transition: background 0.3s;
+}
+.toggle-label .toggle-ball {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s;
+  z-index: 2;
+}
+.toggle-label .toggle-sun,
+.toggle-label .toggle-moon {
+  font-size: 14px;
+  position: absolute;
+  top: 3px;
+  z-index: 1;
+}
+.toggle-label .toggle-sun {
+  left: 5px;
+  color: #f39c12;
+}
+.toggle-label .toggle-moon {
+  right: 8px;
+  color: #34495e;
+}
+.toggle-switch input[type="checkbox"]:checked + .toggle-label {
+  background: #222;
+}
+.toggle-switch input[type="checkbox"]:checked + .toggle-label .toggle-ball {
+  transform: translateX(26px);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background: #181a1b !important;
+  color: #fff !important;
+}
+body.dark-mode .container {
+  background: #23272a !important;
+}
+body.dark-mode .sidebar {
+  background: #181a1b !important;
+  color: #fff !important;
+}
+body.dark-mode .chat-area {
+  background: #181a1b !important;
+}
+body.dark-mode .chat-header,
+body.dark-mode .chat-input {
+  background: #23272a !important;
+}
+body.dark-mode .chat-item.active {
+  background: #2c2f33 !important;
+}
+body.dark-mode .chat-item {
+  background: #23272a !important;
+  color: #fff !important;
+}
+body.dark-mode .chat-item .chat-last-row {
+  color: #b0b0b0 !important;
+}
+body.dark-mode input,
+body.dark-mode button {
+  background: #23272a !important;
+  color: #fff !important;
+  border: 1px solid #444 !important;
+}
+body.dark-mode .modal-content {
+  background: #23272a !important;
+  color: #fff !important;
+}
+body.dark-mode .chat-details,
+body.dark-mode .chat-name,
+body.dark-mode .chat-last-row,
+body.dark-mode .chat-status,
+body.dark-mode .chat-title-row,
+body.dark-mode .chat-last,
+body.dark-mode .chat-unread,
+body.dark-mode .chat-time,
+body.dark-mode .chat-info,
+body.dark-mode .message-text,
+body.dark-mode .message-time {
+  color: #fff !important;
+}
+body.dark-mode .message.sent {
+  background: #263238 !important;
+  color: #fff !important;
+}
+body.dark-mode .message.received {
+  background: #222 !important;
+  color: #fff !important;
+  border: 1px solid #333 !important;
+}
+body.dark-mode .search-bar,
+body.dark-mode .search-bar input {
+  background: #23272a !important;
+  color: #fff !important;
+  border: 1px solid #444 !important;
+}
+body.dark-mode .send-btn {
+  background: #25d366 !important;
+  color: #fff !important;
+}
