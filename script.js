@@ -323,6 +323,60 @@ const chats = {
       },
     ],
   },
+  Girlfriend: {
+    name: "My Girlfriend👩‍❤️‍👨",
+    avatar: "girlfriend.JPG",
+    messages: [
+      {
+        from: "sent",
+        text: "Hey love ❤️ Just saw your favorite coffee place and thought of you. Did you eat today?",
+      },
+      {
+        from: "received",
+        text: "Aww 🥺 I had lunch, unlike someone who lives on iced coffee and chaos!",
+      },
+      {
+        from: "sent",
+        text: "Remember our first date? When you tried to be smooth but spilled your drink? Still the cutest thing I've seen",
+      },
+      {
+        from: "received",
+        text: "OMG you remember that?? 😳 I was so embarrassed but you just laughed and helped me clean up",
+      },
+      {
+        from: "sent",
+        text: "That's when I knew you were special. You turn even awkward moments into something beautiful",
+      },
+      {
+        from: "received",
+        text: "*crying* Now I miss you extra 😭 When can I steal you away for a date?",
+      },
+      {
+        from: "sent",
+        text: "How about Saturday? We can go back to that same place - I promise not to laugh this time (no promises)",
+      },
+      {
+        from: "received",
+        text: "Deal! But only if you let me pay this time (no bathroom escape tricks!)",
+      },
+      {
+        from: "sent",
+        text: "You know me too well 😂 Fine, but I get to choose dessert after",
+      },
+      {
+        from: "received",
+        text: "As if I'd say no to dessert with you ❤️ Counting down the days!",
+      },
+      {
+        from: "sent",
+        text: "Me too, beautiful. Now drink some water (I know you haven't had any today!)",
+      },
+      {
+        from: "received",
+        text: "Ugh fine! Only because you care. Love you to the moon and back 🌙",
+      },
+    ],
+  },
 };
 
 chatItems.forEach((item) => {
